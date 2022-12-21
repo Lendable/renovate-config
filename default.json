@@ -53,6 +53,7 @@
                 "infection/infection",
                 "php-cs-fixer/shim",
                 "php-parallel-lint/php-parallel-lint",
+                "phparkitect/phparkitect",
                 "phpunit/phpunit",
                 "qossmic/deptrac-shim",
                 "rector/rector",
