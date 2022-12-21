@@ -1,3 +1,99 @@
 {
-    "hey": "i am invalid";
-}]
+    "extends": [
+        "config:base",
+        ":enableVulnerabilityAlerts",
+        ":semanticCommitsDisabled",
+        ":prHourlyLimitNone",
+        ":prImmediately"
+    ],
+    "automerge": true,
+    "automergeStrategy": "squash",
+    "automergeType": "pr",
+    "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": "before 11am every day"
+    },
+    "platformAutomerge": true,
+    "rangeStrategy": "in-range-only",
+    "rebaseWhen": "conflicted",
+    "packageRules": [
+        {
+            "matchPackagePatterns": ["*"],
+            "enabled": false
+        },
+        {
+            "matchDatasources": ["docker"],
+            "enabled": true,
+            "groupName": "docker"
+        },
+        {
+            "matchPaths": ["+(composer.json)"],
+            "matchDepTypes": ["require"],
+            "enabled": true,
+            "groupName": "Composer runtime dependencies",
+            "groupSlug": "composer-runtime"
+        },
+        {
+            "matchPaths": ["+(composer.json)"],
+            "matchDepTypes": ["require-dev"],
+            "enabled": true,
+            "groupName": "Composer dev dependencies",
+            "groupSlug": "composer-dev"
+        },
+        {
+            "matchPaths": ["+(composer.json)"],
+            "matchDepTypes": ["require-dev"],
+            "enabled": true,
+            "matchPackageNames": [
+                "behat/behat",
+                "friends-of-behat/symfony-extension",
+                "friendsofphp/php-cs-fixer",
+                "ekino/phpstan-banned-code",
+                "ergebnis/phpstan-rules",
+                "infection/infection",
+                "php-cs-fixer/shim",
+                "php-parallel-lint/php-parallel-lint",
+                "phpunit/phpunit",
+                "qossmic/deptrac-shim",
+                "rector/rector",
+                "staabm/phpstan-dba",
+                "thecodingmachine/phpstan-safe-rule"
+            ],
+            "matchPackagePatterns": ["phpstan/*"],
+            "rangeStrategy": "bump",
+            "groupName": "Composer dev tooling dependencies",
+            "groupSlug": "composer-dev-tooling"
+        },
+        {
+            "matchPaths": ["+(composer.json)"],
+            "matchPackageNames": ["datadog/dd-trace"],
+            "enabled": false
+        },
+        {
+            "matchPaths": ["+(composer.json)"],
+            "matchPackagePatterns": ["symfony/*"],
+            "matchUpdateTypes": ["minor"],
+            "enabled": false
+        },
+        {
+            "matchPaths": ["+(package.json)"],
+            "matchDepTypes": ["dependencies"],
+            "groupName": "npm runtime dependencies",
+            "groupSlug": "npm-runtime",
+            "enabled": true
+        },
+        {
+            "matchPaths": ["+(package.json)"],
+            "matchDepTypes": ["devDependencies"],
+            "groupName": "npm dev dependencies",
+            "groupSlug": "npm-dev",
+            "enabled": true
+        },
+        {
+            "matchPaths": [".github/**"],
+            "enabled": true,
+            "groupName": "GitHub Actions dependencies",
+            "groupSlug": "github-actions"
+        }
+    ]
+}
