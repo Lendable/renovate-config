@@ -27,21 +27,21 @@
             "groupName": "docker"
         },
         {
-            "matchPaths": ["+(composer.json)"],
+            "matchManagers": ["composer"],
             "matchDepTypes": ["require"],
             "enabled": true,
             "groupName": "Composer runtime dependencies",
             "groupSlug": "composer-runtime"
         },
         {
-            "matchPaths": ["+(composer.json)"],
+            "matchManagers": ["composer"],
             "matchDepTypes": ["require-dev"],
             "enabled": true,
             "groupName": "Composer dev dependencies",
             "groupSlug": "composer-dev"
         },
         {
-            "matchPaths": ["+(composer.json)"],
+            "matchManagers": ["composer"],
             "matchDepTypes": ["require-dev"],
             "enabled": true,
             "matchPackageNames": [
@@ -65,32 +65,32 @@
             "groupSlug": "composer-dev-tooling"
         },
         {
-            "matchPaths": ["+(composer.json)"],
+            "matchManagers": ["composer"],
             "matchPackageNames": ["datadog/dd-trace"],
             "enabled": false
         },
         {
-            "matchPaths": ["+(composer.json)"],
+            "matchManagers": ["composer"],
             "matchPackagePatterns": ["symfony/*"],
             "matchUpdateTypes": ["minor"],
             "enabled": false
         },
         {
-            "matchPaths": ["+(package.json)"],
+            "matchManagers": ["npm"],
             "matchDepTypes": ["dependencies"],
             "groupName": "npm runtime dependencies",
             "groupSlug": "npm-runtime",
             "enabled": true
         },
         {
-            "matchPaths": ["+(package.json)"],
+            "matchManagers": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "groupName": "npm dev dependencies",
             "groupSlug": "npm-dev",
             "enabled": true
         },
         {
-            "matchPaths": [".github/**"],
+            "matchManagers": ["github-actions"],
             "enabled": true,
             "groupName": "GitHub Actions dependencies",
             "groupSlug": "github-actions"
