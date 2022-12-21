@@ -11,7 +11,7 @@ on:
       - "**.json"
 
 jobs:
-  sytnax:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
