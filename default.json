@@ -105,6 +105,11 @@
             "enabled": true,
             "groupName": "GitHub Actions dependencies",
             "groupSlug": "github-actions"
+        },
+        {   "matchManagers": ["poetry", "pyenv"],
+            "enabled": true,
+            "groupName": "Poetry dependencies",
+            "groupSlug": "poetry"
         }
     ]
 }
