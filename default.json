@@ -22,7 +22,7 @@
             "enabled": false
         },
         {
-            "matchDatasources": ["docker"],
+            "matchDatasources": ["docker-composer", "dockerfile"],
             "enabled": true,
             "groupName": "docker"
         },
