@@ -54,6 +54,8 @@
                 "ergebnis/phpstan-rules",
                 "infection/infection",
                 "kubawerlos/php-cs-fixer-custom-fixers",
+                "lendable/cards-code-style-rules",
+                "lendable/central-platform-dev-tools",
                 "lendable/composer-license-checker",
                 "mikey179/vfsstream",
                 "php-cs-fixer/shim",
