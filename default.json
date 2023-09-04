@@ -24,8 +24,17 @@
         {
             "matchManagers": ["docker-compose", "dockerfile"],
             "enabled": true,
-            "groupName": "docker",
+            "groupName": "Docker",
             "rangeStrategy": "bump"
+        },
+        {
+            "matchManagers": ["docker-compose", "dockerfile"],
+            "enabled": true,
+            "groupName": "Docker (unpinned)",
+            "groupSlug": "docker-unpinned",
+            "rangeStrategy": "bump",
+            "matchPackageNames": ["composer/composer"],
+            "pinDigests": false
         },
         {
             "matchManagers": ["composer"],
