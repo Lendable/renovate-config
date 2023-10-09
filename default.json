@@ -150,6 +150,7 @@
             "matchPackageNames": [
                 "bitnami/mysql",
                 "mysql",
+                "public.ecr.aws/docker/library/mysql",
                 "php",
                 "public.ecr.aws/docker/library/php",
                 "postgres",
