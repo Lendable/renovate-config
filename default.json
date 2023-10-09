@@ -151,7 +151,9 @@
                 "bitnami/mysql",
                 "mysql",
                 "php",
-                "postgres"
+                "public.ecr.aws/docker/library/php",
+                "postgres",
+                "public.ecr.aws/docker/library/postgres"
             ],
             "matchUpdateTypes": ["major", "minor"],
             "enabled": false
