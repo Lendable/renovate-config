@@ -120,7 +120,7 @@
             "groupSlug": "composer-dev-tooling"
         },
         {
-            "matchManagers": ["composer", "github-releases"],
+            "matchManagers": ["composer", "regex"],
             "matchDepNames": ["datadog/dd-trace", "datadog/dd-trace-php"],
             "groupName": "DataDog PHP Tracer",
             "groupSlug": "dd-trace-php",
