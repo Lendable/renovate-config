@@ -42,7 +42,7 @@
         {
             "fileMatch": [
                 "^.+\\.md$",
-                "^Dockerfile.*$",
+                "^Dockerfile",
                 "^.github/(?:workflows|actions)/.+\\.ya?ml$"
             ],
             "customType": "regex",
