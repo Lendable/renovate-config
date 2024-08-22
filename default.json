@@ -17,6 +17,15 @@
     "platformAutomerge": true,
     "rangeStrategy": "in-range-only",
     "rebaseWhen": "conflicted",
+    "hostRules": [
+        {
+          "hostType": "npm",
+          "matchHost": "https://jfrog.shared.prod.zable.co.uk/artifactory/api/npm/npm",
+          "encrypted": {
+            "token": "wcFMA/xDdHCJBTolAQ//VHhjEDVxDzIj9crRh36BJD8bE7QLP//sNCdAmjFoJ9QcaGmdvc41Cn5UD9yt5JscNZioIRjQb7/Q+pcx/6oQcCawjTxbZI2mZrCbGlDou0s2UjTR4uDbSiS2nRia8TQlK6b8Vkw59Z1Q5/+ho5/cf3P2Gw9F8o223jKuZ8XtN1WIXQAqCzXiJa02I9hfRMDFpaL/JZbwrVgCrPKR9CWxqg00RqN/O9YWAd+E4xlmk4emVBRomcDVMhGNqofukX6dp9zRPMvAGJc9X2XVdReJxy+P9xPINWENw5JdUBgzvgjO/GXV4huy1XVRXWlhsk51Y+47FjyQGxF+hR14tqgdxjWp9gh8pe/OeQpGyTB31rxjYY8PxRA4MrRWCwRHv+bi42Kb79r4YhqQoADLZdweOVZxwze0UGcmWA/e6ddhVSF3prBjl4UozrBrDhafiY0cZ4aYn2q9yQHH+CQbrgyFgaSiX2bU0dxYc3Oz7G3bQk5FTlLsiPvdXHkIWAG+4X7jUfw5kKYC/IXVgafY8Xn24CK5c9bnoOXIaPGcBNQfv+YFk+pOwFtvSB69s4WaCJUD2K6LMQ8raXl+DZzN86p0MSVzsrKdL8uotXFEsQHXj1n+g7xHz4A3/aWN6muLld+qlPngqY9Ly77zRVhY8Jt2BqaQ0JxW26+cOBHywgOwCFjSmwG1+u5ySH+YDiMV07BsiIpklg++x596OSrduhl6TpZ3bcdujNXeJzPWotzj3I8m7SfmOkRx3QFJLrGkEm1IC9Ir1pILVVPGMCKBx3yVlrlaQEEpfjeUHewERYe+Ck4v+Yb5UGHrtrT54cEoWn5iO+sOopkDZ1/vzVFTEHDLzFIyqEgVQ92rZ1lP64TZ+lbTV0u0IDksc/yrfLcu"
+          }
+        }
+    ],
     "customManagers": [
         {
             "customType": "regex",
