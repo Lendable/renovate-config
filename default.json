@@ -19,13 +19,13 @@
     "rebaseWhen": "conflicted",
     "hostRules": [
         {
-          "hostType": "npm",
-          "matchHost": "https://jfrog.shared.prod.zable.co.uk/artifactory/api/npm/npm",
-          "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
+            "hostType": "npm",
+            "matchHost": "https://jfrog.shared.prod.zable.co.uk/artifactory/api/npm/npm/",
+            "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
         },
         {
             "hostType": "npm",
-            "matchHost": "https://jfrog.int.zable.co.uk/artifactory/api/npm/npm",
+            "matchHost": "https://jfrog.int.zable.co.uk/artifactory/api/npm/npm/",
             "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
         },
         {
@@ -46,6 +46,16 @@
         {
             "hostType": "terraform-module",
             "domainName": "jfrog.int.zable.co.uk",
+            "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
+        },
+        {
+            "hostType": "maven",
+            "matchHost": "https://jfrog.shared.prod.zable.co.uk/",
+            "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
+        },
+        {
+            "hostType": "maven",
+            "matchHost": "https://jfrog.int.zable.co.uk/",
             "token": "{{ secrets.ARTIFACTORY_RENOVATE_RO }}"
         }
     ],
