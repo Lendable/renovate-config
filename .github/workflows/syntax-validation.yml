@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: [ 'lendable-medium-dind-x64-linux' ]
 
     steps:
       - name: "Checkout"
