@@ -186,7 +186,7 @@
         {
             "matchManagers": ["github-actions"],
             "enabled": true,
-            "minimumReleaseAge": "5 days",
+            "minimumReleaseAge": "3 days",
             "groupName": "GitHub Actions dependencies",
             "groupSlug": "github-actions",
             "rangeStrategy": "bump"
