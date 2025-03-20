@@ -192,6 +192,15 @@
             "rangeStrategy": "bump"
         },
         {
+            "matchManagers": ["github-actions"],
+            "matchPackagePatterns": ["^lendable/", "^Lendable/"],
+            "enabled": true,
+            "minimumReleaseAge": "1 day",
+            "groupName": "GitHub Actions Lendable dependencies",
+            "groupSlug": "github-actions",
+            "rangeStrategy": "bump"
+        },
+        {
             "matchManagers": ["poetry"],
             "enabled": true,
             "groupName": "Poetry dependencies",
